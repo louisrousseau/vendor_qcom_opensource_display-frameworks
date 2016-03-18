@@ -14,8 +14,8 @@ LOCAL_CFLAGS                    += -DHAS_CONTEXT_PRIORITY
 LOCAL_C_INCLUDES                += $(TARGET_OUT_HEADERS)
 LOCAL_C_INCLUDES                += frameworks/native-caf/services/surfaceflinger
 ifneq ($(TARGET_QCOM_DISPLAY_VARIANT),)
-    LOCAL_C_INCLUDES        += hardware/qcom/display/$(TARGET_QCOM_DISPLAY_VARIANT)/libgralloc
-    LOCAL_C_INCLUDES        += hardware/qcom/display/$(TARGET_QCOM_DISPLAY_VARIANT)/libqdutils
+    LOCAL_C_INCLUDES += hardware/qcom/display/$(TARGET_QCOM_DISPLAY_VARIANT)/libgralloc/
+    LOCAL_C_INCLUDES += hardware/qcom/display/$(TARGET_QCOM_DISPLAY_VARIANT)/libqdutils/
 else
     LOCAL_C_INCLUDES += hardware/qcom/display/libgralloc
     LOCAL_C_INCLUDES += hardware/qcom/display/libqdutils
